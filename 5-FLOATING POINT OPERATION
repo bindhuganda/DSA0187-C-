@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	float a,b,c;
+	char op;
+	cout<<"enter a";
+	cin>>a;
+	cout<<"enter b";
+	cin>>b;
+	cout<<"enter the operation";
+	cin>>op;
+	switch(op)
+	{
+		case '+':
+			c=a+b;
+			cout<<c;
+			break;
+			case '-':
+				c=a-b;
+				cout<<c;
+				break;
+				case'*':
+					c=a*b;
+					cout<<c;
+					break;
+					case'/':
+						c=a/b;
+						cout<<c;
+						break;
+					
+					}
+}
