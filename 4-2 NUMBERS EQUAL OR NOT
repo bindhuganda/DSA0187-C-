@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=5,b=6;
+	if(a==b)
+	{
+		cout<<"two integers are equal";
+	}
+	else
+	{
+		cout<<"two integers are not equal";
+	}
+	return 0;
+}
