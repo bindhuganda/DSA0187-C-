@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n,r,i,sum=0;
+	cout<<"enter the number";
+	cin>>n;
+	r=n;
+	while(r>0)
+	{
+		sum += r%10;
+		r/=10;
+	}
+	if(n%sum==0)
+	{
+		cout<<"harshad number";
+	}
+	else
+	{
+		
+		cout<<"not a harshad number";
+	}
+	return 0;
+}
