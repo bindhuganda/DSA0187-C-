@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int m,n,p,q,i,j,a[5][5],b[5][5],c[5][5];
+	cout<<"enter rows and columns of matrix A\n:";
+	cin>>m>>n;
+	cout<<"enter rows and columns of matrix B\n:";
+	cin>>p>>q;
+	if(m!=p && n!=q)
+	{
+		cout<<"cannot add the matrixes";
+		exit(0);
+	}
+	cout<<"enter the elements of matrix A";
+	for(i=0;i<m;i++)
+	for(j=0;j<n;j++)
+	{
+		cin>>a[i][j];
+	}
+	cout<<"enter the elements of matrix B";
+	for(i=0;i<p;i++)
+	for(j=0;j<q;j++)
+	{
+		cin>>b[i][j];
+	}
+	for(i=0;i<m;i++)
+	for(j=0;j<n;j++)
+	{
+		c[i][j]=a[i][j]+b[i][j];
+	}
+	cout<<"sum of the matrixes\n:";
+	for(i=0;i<m;i++)
+	for(j=0;j<n;j++)
+	{
+		cout<<c[i][j]<<" ";
+		cout<<"\n";
+	}
+	return 0;
+	
+}
