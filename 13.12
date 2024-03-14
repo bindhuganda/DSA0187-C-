@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main() {
+    int integerNumber;
+    float floatNumber;
+    std::cout << "Enter an integer: ";
+    std::cin >> integerNumber;
+    std::cout << "Enter a float: ";
+    std::cin >> floatNumber;
+    if (integerNumber != 0) {
+        float result = floatNumber / integerNumber;
+        std::cout << "Result of float divided by integer: " << result << std::endl;
+    } else {
+        std::cout << "Error: Division by zero is not allowed." << std::endl;
+    }
+
+    return 0;
+}
